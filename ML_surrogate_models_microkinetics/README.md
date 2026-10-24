@@ -2,7 +2,7 @@
 
 A Python machine learning project that explores relationships between operating conditions, surface coverages, and turnover frequency (TOF), and compares four regression models.
 
-**Data provenance:** The dataset contains 10,000 artificially generated practice samples. Values were produced using an illustrative nonlinear rate equation and added noise. They are not experimental measurements, DFT/KMC results, or outputs from a solved microkinetic reaction mechanism. Model performance measures how well the algorithms reproduce this generated dataset.
+**Data provenance:** The dataset contains 10,000 datapoints on MSR TOFs (s-1) at different operating conditions obtained from a mean-field microkinetic model. 
 
 ## Dataset
 
