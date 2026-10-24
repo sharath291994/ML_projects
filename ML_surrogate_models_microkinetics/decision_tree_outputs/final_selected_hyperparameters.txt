@@ -1,0 +1,14 @@
+Target: log10(TOF)
+Final training rows: 10000
+
+Final selected hyperparameters:
+{'max_depth': None, 'max_features': None, 'min_samples_leaf': 20}
+
+Actual fitted tree depth: 12
+Number of leaves: 384
+
+Final inner-CV tuning RMSE: 0.332774
+This is a selection score, not an independent test score.
+
+Pooled outer-CV test metrics:
+{'MAE': 0.2321514107583756, 'R2': 0.9847591839630517, 'RMSE': 0.323308788867887}

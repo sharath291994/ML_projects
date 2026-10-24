@@ -1,0 +1,22 @@
+MODEL COMPARISON ANALYSIS
+
+Accuracy winner in this comparison: ANN.
+Its average test RMSE is 0.0589 log10 units, compared with 0.2544 for Random forest.
+This represents a 76.8% reduction in RMSE relative to the runner-up.
+The winner's average training RMSE is 0.0570, and its average test R2 is 0.9995.
+
+Training/test RMSE gaps:
+  ANN: train=0.0570, test=0.0589, gap=0.0019.
+  Random forest: train=0.0946, test=0.2544, gap=0.1598.
+  Decision tree: train=0.2630, test=0.3230, gap=0.0600.
+  Linear regression: train=0.7303, test=0.7309, gap=0.0006.
+
+A larger positive gap can indicate overfitting. A small gap alone does not establish a good model: both errors may still be high.
+For the ANN, training RMSE includes its internal early-stopping subset, so its gap is not strictly equivalent to the other models' training/test gaps.
+
+The ANN captures nonlinear relationships but requires scaling and may vary with random initialisation.
+Recommendation: choose ANN if the main objective is the lowest RMSE among these tested configurations.
+If leading models have similar errors, also consider simplicity and computational cost. Fit times here are approximate and depend on the computer and available CPU cores.
+Fold standard deviations are not confidence intervals and do not establish statistical significance.
+These scores reuse the folds used for hyperparameter selection. An independent test set is needed for a separate final performance assessment.
+Results describe predictive performance on this generated dataset and do not validate real catalyst behaviour.
